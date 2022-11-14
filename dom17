@@ -1,0 +1,71 @@
+class Solution {
+
+   
+
+    rowWithMax1s(arr, n, m){
+
+    let ind = -1;
+
+
+
+  let mx = 0;
+
+
+
+   for(let i = 0 ; i < n ; i++){
+
+
+
+     let sum = 0 ; 
+
+
+
+     for(let j = 0 ; j < m; j++){
+
+
+
+       sum += arr[i][j];
+
+
+
+     }
+
+
+
+     
+
+
+
+     if(sum > mx){
+
+
+
+       mx = sum;
+
+
+
+       ind = i;
+
+
+
+     }
+
+
+
+     
+
+
+
+   }
+
+
+
+   return ind;
+
+     
+
+   
+
+  }
+
+}
